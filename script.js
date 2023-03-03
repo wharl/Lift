@@ -4,11 +4,9 @@ const lift = document.getElementById("lift")
 const start = document.getElementById("start")
 const box = document.getElementById("box")
 
-box.innerHTML = floorCreation(floor.value);
-
-// start.addEventListener("click", function () {
-//     box.innerHTML = floorCreation(floor.value);
-// });
+start.addEventListener("click", function () {
+    box.innerHTML = floorCreation(floor.value);
+});
 
 let allFloor = ``
 
