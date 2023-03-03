@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+.entry input {
+  margin: 1rem auto;
+  width: 30%;
+  line-height: 2rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* .entry button {
+    margin: .5rem auto;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+} */
+
+.entry button {
+  margin: .5rem auto;
+  display: block;
+  height: 70px;
+  width: 70px;
+  font-size: large;
+  border-radius: 50%;
+  background-color: aqua;
+  border: 2px solid yellow;
+}
+
+.entry button:hover {
+  background-color: rgb(173, 242, 178);
+}
+
+hr {
+  height: 1px;
+  background: black;
+}
+
+#num {
+  padding: 50px;
+}
+
+.square {
+  height: 100px;
+  width: 70px;
+  background-color: violet;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: absolute;
+  top: 700px;
+  animation: myfirst 2000ms;
+}
+
+@keyframes myfirst {
+  0% {
+    top: 700px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; 
+}
+
+.left {
+  width: 10%;
+}
+
+.right {
+  width: 90%;
+}
