@@ -9,26 +9,31 @@ box.innerHTML = floorCreation(floor.value);
 //     box.innerHTML = floorCreation(floor.value);
 // });
 
-let allFloor = ``
 
 function floorCreation(floor) {
     let allFloor = ``
     while (floor) {
         floor = floor - 1;
 
-        if (floor == 0) {
-            allFloor += `<div class="square"></div>`
-        }
-
         allFloor += `<div id="num">
-        <p>Floor ${floor + 1}</p>
-        <button id="up"> Up</button><br>
-        <button id="down"> Down</button>
-        <div id="line">
-        <span></span>
-        </div>
-        </div>`;
 
+
+        <div>
+            <button id="up"> Up</button><br>
+        </div>
+        
+        <div>
+            <button id="down"> Down</button><br>
+        </div>
+
+        <div class="square"></div>
+
+        <div id="line">
+            <p>Floor ${floor + 1}</p>
+        </div>
+            
+
+        </div>`;
     }
     return allFloor
 }
