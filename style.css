@@ -11,12 +11,9 @@
   justify-content: center;
 }
 
-/* .entry button {
-    margin: .5rem auto;
-    font-size: medium;
-    display: flex;
-    justify-content: center;
-} */
+#line{
+  border-bottom: 3px solid black;
+}
 
 .entry button {
   margin: .5rem auto;
@@ -33,19 +30,8 @@
   background-color: rgb(173, 242, 178);
 }
 
-hr {
-  height: 1px;
-  background: black;
-}
-
 #num {
   padding: 50px;
-}
-
-.square {
-  height: 100px;
-  width: 70px;
-  background-color: violet;
 }
 
 .square {
@@ -54,29 +40,15 @@ hr {
   background: green;
   position: absolute;
   top: 700px;
-  animation: myfirst 2000ms;
+  animation: squareAnimation 5000ms;
 }
 
-@keyframes myfirst {
+@keyframes squareAnimation {
   0% {
-    top: 700px;
+    top:500px;
   }
 
   100% {
     top: 0px;
   }
-}
-
-.column {
-  float: left;
-  padding: 10px;
-  height: 300px; 
-}
-
-.left {
-  width: 10%;
-}
-
-.right {
-  width: 90%;
 }
